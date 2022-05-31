@@ -8,6 +8,6 @@ int main()
          
         printf("no.=%0d\n",i); // printing series of values
 
-        
+         
     }
 }   
