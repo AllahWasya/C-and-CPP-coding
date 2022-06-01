@@ -46,7 +46,7 @@ else if (a>b)
     printf("%d is median numbber\n",a);
 }
 else 
-    printf("%d is median numbber\n",b);
+    printf("%d is median numbber\n",c);
 }
 
 

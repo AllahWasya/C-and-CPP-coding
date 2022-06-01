@@ -1,27 +1,22 @@
-#include <stdio.h>
+#include<stdio.h>    
+#include<stdlib.h>  
+int main(){  
+int a[10],n,i=0;    
+system ("cls");  
+printf("Enter the number to convert: ");    
+scanf("%d",&n);    
 
-void decimalToBinary(int num) {   
-    if (num == 0) {
-        printf("0");
-        return;
-    }
-   
-   // Stores binary representation of number.
-   int binaryNum[32]; // Assuming 32 bit integer.
-   int i=0;
-   
-   for ( ;num > 0; ){
-      binaryNum[i++] = num % 2;
-      num /= 2;
-   }
-   
-   // Printing array in reverse order.
-   for (int j = i-1; j >= 0; j--)
-      printf("%d", binaryNum[j]);
-}
-
-int main() {
-   int num = 100;
-   decimalToBinary(num);
-   return 0;
-}
+while (n>0)    
+{    
+a[i]=n%2;    
+n=n/2;
+i++;    
+}    
+printf("\nBinary of Given Number is=");    
+for(i=i-1;i>=0;i--)    
+{    
+printf("%d",a[i]);
+}   
+printf("\n\n"); 
+return 0;  
+}  

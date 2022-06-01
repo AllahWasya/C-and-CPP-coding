@@ -1,28 +1,41 @@
 // C++ program to demonstrate
 // accessing of data members
 
-#include <bits/stdc++.h>
+#include<iostream>
+#include<string.h>
 using namespace std;
-class Geeks
+class ninth
 {
-	// Access specifier
 	public:
-	// Data Members
-	string geekname;
-	// Member Functions()
-	void printname()
+	int rno;
+	string name;
+	void print()
 	{
-	cout << "Geekname is: " << geekname;
+		cout<<"Name of Student with Roll "<<rno<<" is "<<name<<endl;
 	}
+
+};
+class engineers
+{
+	public:
+	int no;
+	string name1;
+	void print1()
+	{
+		cout<<"Name of Student with engineer no. "<<no<<" is "<<name1<<endl;
+	}
+
 };
 
-int main() {
-	// Declare an object of class geeks
-	Geeks obj1;
-	// accessing data member
-	obj1.geekname = "Abhi";
+int main()
+{
+	ninth obj;
+	obj.name="Wasaya";
+	obj.rno=125;
+	obj.print();
 
-	// accessing member function
-	obj1.printname();
-	return 0;
+	engineers obj1;
+	obj1.name1="Ali";
+	obj1.no=45;
+	obj1.print1();
 }

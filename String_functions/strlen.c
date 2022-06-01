@@ -9,4 +9,5 @@ void main()
     printf("String copy is: %s\n\n",copy);
     strcat(copy," Khan");
     printf("String copy is: %s\n\n",copy);
+    
 }
