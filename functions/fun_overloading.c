@@ -1,12 +1,13 @@
 #include<stdio.h>
+int r;
 void main()
 {
-    int a,b,r;
-    char ch;
-    printf("result is: ",fun(a,b));
+    int a=6,b=9;
+    r=fun(a,b);
+    printf("result is: %d\n",r);
 
 }
-void fun(int x,int y)
+int fun(int x,int y)
 {
     return x+y;
 }
