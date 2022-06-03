@@ -469,59 +469,35 @@ int main()
 
 int main()
 {
-    int N, i, j;
-
-    printf("Enter N: ");
-    scanf("%d", &N);
-
-    // First upper half of the pattern
-    for(i=N; i>=1; i--)
-    {
-        // First inner part of upper half
-        for(j=N; j>i; j--)
-        {
-            printf("%d", j);
-        }
-        printf("\n");
-
-        // Second inner part of upper half
-        for(j=1; j<=(i*2-1); j++)
-        {
-            printf("%d", i);
-        }
-
-        // Third inner part of upper half
-        for(j=i+1; j<=N; j++)
-        {
-            printf("%d", j);
-        }
-    }
-
-    // Second lower half of the pattern
-    for(i=2; i<N; i++)
-    {
-        // First inner part of lower half
-        for(j=N; j>i; j--)
-        {
-            printf("%d", j);
-        }
-
-        // Second inner part of lower half
-        for(j=1; j<=(i*2-1); j++)
-        {
-            printf("%d", i);
-        }
-
-        // Third inner part of lower half
-        for(j=i+1; j<=N; j++)
-        {
-            printf("%d", j);
-        }
-
-        printf("\n");
-    }
-    
-   return 0;
+    int N=1,i,j;
+for (i = 4; i>=1; i--)
+{
+  for (j = 1; j<=i; j++)
+  {
+    printf(" ");
+  }
+  for (j = 4; j>=i; j--)
+  {
+    printf("%d",N);
+    N++;
+  }
+printf("\n");
+  
 }
-
-
+N=N-1;
+for (i = 1; i<=4; i++)
+{
+  for (j = 1; j<=i; j++)
+  {
+    printf(" ");
+  }
+  for (j = 4; j>=i; j--)
+  {
+    printf("%d",N);
+    N--;
+  }
+printf("\n");
+  
+}
+return 0;
+}

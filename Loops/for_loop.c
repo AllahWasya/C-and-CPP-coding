@@ -3,11 +3,9 @@
 int main()
 {
     int i;
-    for (i=7;i<99; i++) 
-    {
-         
+    for (i=91;i<99; i++) 
+    {         
         printf("no.=%0d\n",i); // printing series of values
-
-         
+ 
     }
 }   
