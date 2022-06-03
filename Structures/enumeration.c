@@ -14,6 +14,7 @@ void main()
     shoe_size=extr_large;
     printf("Shoe size is : %d\n",shoe_size);
 }
+
 */
 #include <stdio.h>
 typedef struct complex {
@@ -23,7 +24,7 @@ typedef struct complex {
 
 }complex1;
 
-void main()
+int main()
 {
       complex1 c1= {.real=55, .imag=12};
       complex1 c2= {.real=66, .imag=10};
@@ -34,4 +35,5 @@ void main()
       return 0;
       
 }
+
 

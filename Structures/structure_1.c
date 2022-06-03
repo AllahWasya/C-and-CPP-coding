@@ -4,11 +4,11 @@
 struct myStructure {
   int myNum;
   char myLetter;
-};
+}s1;
 
 int main() {
   // Create a structure variable of myStructure called s1
-  struct myStructure s1;
+  //struct myStructure s1;
 
   // Assign values to members of s1
   s1.myNum = 13;
