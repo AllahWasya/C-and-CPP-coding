@@ -9,6 +9,7 @@ int check(int x)
        if (y !=0 && y !=1)
        {
           count++;
+          break;
        }
         x=x/10;
     }
@@ -21,6 +22,6 @@ int check(int x)
 }
 int main()
 {
-    int x=1510;
+    int x=1011;
     check(x);
 }
