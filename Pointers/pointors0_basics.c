@@ -1,6 +1,6 @@
 // Basics concept of pointers
 #include<stdio.h>
-#include<conio.h>
+// #include<conio.h>
 int main(){
   int *p;
   int x;

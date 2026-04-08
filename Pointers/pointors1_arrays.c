@@ -1,6 +1,6 @@
 // pointers in arrays
 #include<stdio.h>
-#include<conio.h>
+// #include<conio.h>
 int main(){
 
   int arr[5]={70,56,4,33,66};
@@ -16,6 +16,6 @@ int main(){
 {
   printf("Address of value %0d in the array is= %0d\n",i, p);// addresses
   printf("Value at above address is : %0d\n",*p); // values
-  p=p+1; // address is changing at each iteration
+  p=p+1; // address is changing at each iteration 
 }
 }
