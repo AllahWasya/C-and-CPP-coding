@@ -5,6 +5,7 @@ struct Node {
     int data;
     struct Node *next;
 };
+
 void linklistTraversal (struct Node *ptr)
 {
     while (ptr != NULL)

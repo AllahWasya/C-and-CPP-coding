@@ -5,7 +5,7 @@ struct test
     float b;
     char c;
 };
-void show(test);
+// void show(test);
 void main(void)
 {
     struct test t1,t3;
